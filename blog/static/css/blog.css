@@ -1,0 +1,137 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  color: #777;
+}
+h2,h3,h4 {
+  color: #222;
+}
+.clearfix:after {
+  content: '';
+  clear: both;
+  line-height: 0;
+  display: table;
+  font-size: 0;
+}
+.conteiner {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.legal {
+  float: left;
+  font-size: 14px;
+  line-height: 30px;
+
+}
+.social {
+  float: right;
+}
+.social a {
+  color: #ccc;
+  font-size: 30px;
+  margin-left: 10px;
+  transition: color 200ms ease;
+}
+.social a:hover {
+  color: #222;
+}
+
+header {
+background-color: #555555;
+color: #ffffff;
+height: 400px;
+overflow: hidden;
+font-family: Pasajero;
+}
+
+header bdo {
+  text-align: left;
+  font-size: 20px;
+  float: right;
+}
+header h1 {
+  font-size: 85px;
+  margin-top: 150px;
+  margin-bottom: 0;
+  text-align: center;
+
+}
+header p {
+  font-size: 50px;
+  text-decoration: overline;
+  text-align: center;
+  margin-top: 5px;
+}
+nav {
+  background-color: #bbbbbb;
+  font-family: courier;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li.active a,
+nav ul li:hover a {
+  background: #555555;
+  /*hover tai selektorius, kuris nurodo busena kai uzvedi pele ant tam tikro objekto*/
+}
+nav ul li:nth-child(odd) {
+  background-color: black;
+}
+
+nav ul li a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  transition: background 200ms ease;
+/*pirmoji reiksme top bottom antroji left right*/
+/*transition - animacija*/
+}
+
+main {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  line-height: 1.5em;
+  /*cia galima naudoti ir margin ir padding, kadangi musu fonas yra baltas, bet siaip reiktu naudot padding KURVA NESUPRANTU*/
+}
+article  {
+  width: 40%;
+  float: left;
+  padding-right: : 20px;
+}
+aside {
+  width: 60%;
+  float: right;
+  padding: 20px;
+  /*sito nesupratau*/
+}
+
+aside img {
+  border-radius: 10px;
+  width: 500px;
+  border: 1px solid #ddd;
+
+}
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+
+footer {
+  background-color: #f6f6f6;
+  padding: 20px 0;
+  color: #ccc;
+}
